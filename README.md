@@ -36,7 +36,7 @@ The easiest way to run this project is using **Docker**, which handles all depen
 1. **Clone the repository:**
 
     ```Bash
-    git clone https://github.com/shism04/hola-neurona-app.git
+    git clone https://github.com/shism04/neurona-app.git
     cd hola-neurona-app
     ```
 2. **Launch the application:**
@@ -59,7 +59,7 @@ If you prefer to run it without Docker, follow these steps:
     ```Bash
     python -m venv venv
     ```
-    # On Windows: venv\Scripts\activate | On Unix: source venv/bin/activate`
+    On Windows: venv\Scripts\activate | On Unix: source venv/bin/activate`
     
 2. **Install dependencies:**
     ```Bash
@@ -72,15 +72,6 @@ If you prefer to run it without Docker, follow these steps:
 
 > Note: Ensure you have the necessary assets (like neurona.png) in the root directory as specified in the Dockerfile.
 
----
-
-## 🚀 How to Run
-
-Launch the application by running the following command in your terminal:
-
-```Bash
-streamlit run app.py`
-```
 ---
 
 ## 📁 Project Structure
