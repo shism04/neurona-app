@@ -2,6 +2,8 @@
 
 **¡Hola Neurona!** is an educational web application built with **Streamlit** designed to visualize and calculate the output of a basic artificial neuron. Users can interactively adjust weights, inputs, and bias to see how the mathematical model responds.
 
+[Click here](https://neurona-app-fpdbs3mhuktxhp4afqfvfw.streamlit.app/) to see the app running.
+
 The app demonstrates the fundamental calculation of a neuron:
 
 $$Output = \sum_{i}(w_{i} \cdot x_{i}) + b$$
