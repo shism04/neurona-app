@@ -24,23 +24,53 @@ $$Output = \sum_{i}(w_{i} \cdot x_{i}) + b$$
 
 ## 🛠️ Installation & Setup
 
-To run this project locally, follow these steps:
+The easiest way to run this project is using **Docker**, which handles all dependencies and environment configurations automatically.
 
-1. **Clone the repository:**Bash
+### Prerequisites
+
+- [Docker](https://docs.docker.com/get-docker/) installed.
+- [Docker Compose](https://docs.docker.com/compose/install/) installed.
+
+### Steps to Run
+
+1. **Clone the repository:**
+
+    ```Bash
+    git clone https://github.com/shism04/hola-neurona-app.git
+    cd hola-neurona-app
+    ```
+2. **Launch the application:**
+Run the following command in the root directory:
+
+    ```Bash
+    docker-compose up --build
+    ```
+3. **Access the app:**
+Once the containers are running, open your browser and go to:
+`http://localhost:8501`
+
+---
+
+### 🛠 Alternative: Local Development (Manual)
+
+If you prefer to run it without Docker, follow these steps:
+
+1. **Create and activate a virtual environment:**
+    ```Bash
+    python -m venv venv
+    ```
+    # On Windows: venv\Scripts\activate | On Unix: source venv/bin/activate`
     
-    `git clone https://github.com/shism04/hola-neurona-app.git
-    cd hola-neurona-app`
-    
-2. **Create a virtual environment:**Bash
-    
-    `python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate`
-    
-3. **Install dependencies:**Bash
-    
-    `pip install streamlit`
-    
-4. **Add Assets:** Ensure you have an image named `neurona.png` in the root directory for the app header.
+2. **Install dependencies:**
+    ```Bash
+    pip install -r requirements.txt
+    ```
+3. **Run the Streamlit app:**
+    ```Bash
+    streamlit run app.py
+    ```
+
+> Note: Ensure you have the necessary assets (like neurona.png) in the root directory as specified in the Dockerfile.
 
 ---
 
@@ -48,10 +78,9 @@ To run this project locally, follow these steps:
 
 Launch the application by running the following command in your terminal:
 
-Bash
-
-`streamlit run app.py`
-
+```Bash
+streamlit run app.py`
+```
 ---
 
 ## 📁 Project Structure
